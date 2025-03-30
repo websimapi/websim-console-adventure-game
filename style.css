@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ecf0f1;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#console-container {
+    background-color: #1e272e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#console-header {
+    background-color: #34495e;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid #2c3e50;
+}
+
+#console-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.console-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #e74c3c; }
+.yellow { background-color: #f39c12; }
+.green { background-color: #2ecc71; }
+
+#console-output {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#console-input-area {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #2c3e50;
+    align-items: center;
+}
+
+.prompt {
+    color: #2ecc71;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#console-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ecf0f1;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    flex: 1;
+}
+
+.game-command {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.game-response {
+    color: #ecf0f1;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+
+.success-message {
+    color: #2ecc71;
+}
+
+.item-found {
+    color: #f1c40f;
+}
+
+.health-info {
+    color: #e74c3c;
+}
+
+.enemy-text {
+    color: #e67e22;
+}
+
+.map-display {
+    color: #9b59b6;
+    font-family: monospace;
+}
+
